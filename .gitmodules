@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-rvm"]
 	path = .vim/bundle/vim-rvm
 	url = git://github.com/tpope/vim-rvm.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
