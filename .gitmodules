@@ -31,9 +31,6 @@
 [submodule ".vim/bundle/webapi-vim"]
 	path = .vim/bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
-[submodule ".vim/bundle/nerdcommenter"]
-	path = .vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter
 [submodule ".vim/bundle/vim-bufexplorer"]
 	path = .vim/bundle/vim-bufexplorer
 	url = git://github.com/thisivan/vim-bufexplorer.git
