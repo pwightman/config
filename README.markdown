@@ -1,4 +1,4 @@
-All my config files in a the "config" directory of my home folder. I
+All my config files are in a "config" directory of my home folder. I
 just source the .\*rc file inside the config folder from the
 corresponding one in my home folder.
 
