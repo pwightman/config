@@ -1,5 +1,9 @@
 source ~/config/.vim/autoload/pathogen.vim
 call pathogen#infect('~/config/.vim/bundle')
+
+" NERDTree
+let NERDTreeShowHidden=1
+
 set backspace=indent,eol,start
 set shortmess=atI
 set foldlevelstart=3
