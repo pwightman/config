@@ -38,12 +38,6 @@ filetype plugin on
 set ofu=syntaxcomplete#Complete
 "Set quick keys for switching buffers
 set nocompatible
-map <C-J><C-J> <C-W>j<C-W>_
-map <C-J> <C-W>j<C-W>=
-map <C-K><C-K> <C-W>k<C-W>_
-map <C-K> <C-W>k<C-W>=
-map <C-H> <C-W>h
-map <C-L> <C-W>l
 set incsearch
 set shiftwidth=4
 set vb t_vb=".
@@ -74,3 +68,11 @@ augroup END
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
+
+" Easy window switching
+map <C-J><C-J> <C-W>j<C-W>_
+map <C-J> <C-W>j<C-W>=
+map <C-K><C-K> <C-W>k<C-W>_
+map <C-K> <C-W>k<C-W>=
+map <C-H> <C-W>h
+map <C-L> <C-W>l
