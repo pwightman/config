@@ -1,9 +1,6 @@
 source ~/config/.vim/autoload/pathogen.vim
 call pathogen#infect('~/config/.vim/bundle')
 
-" NERDTree
-let NERDTreeShowHidden=1
-
 set backspace=indent,eol,start
 set shortmess=atI
 set foldlevelstart=3
@@ -16,6 +13,8 @@ let g:CommandTMatchWindowReverse=1
 set scrolloff=3
 set title
 set autoindent
+set autoread
+set showmatch
 set hidden
 let mapleader = ","
 set history=1000
@@ -58,10 +57,10 @@ function OpenInFinder()
 endfunction
 nnoremap <leader>f :call OpenInFinder()<CR>
 
-set textwidth=72
+set textwidth=90
 augroup vimrc_autocmds
   autocmd BufEnter * highlight OverLength ctermbg=red guibg=#592929
-  autocmd BufEnter * match OverLength /\%72v.*/
+  autocmd BufEnter * match OverLength /\%90v.*/
 augroup END
 
 " gist-vim
@@ -70,12 +69,14 @@ let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
 
 " Easy window switching
-map <C-J><C-J> <C-W>j<C-W>_
-map <C-J> <C-W>j<C-W>=
-map <C-K><C-K> <C-W>k<C-W>_
-map <C-K> <C-W>k<C-W>=
-map <C-H> <C-W>h
-map <C-L> <C-W>l
+nmap <C-J><C-J> <C-W>j<C-W>_
+nmap <C-J> <C-W>j<C-W>=
+nmap <C-K><C-K> <C-W>k<C-W>_
+nmap <C-K> <C-W>k<C-W>=
+nmap <C-H> <C-W>h
+nmap <C-L> <C-W>l
+
+" rspec
 
 " vim in irb
 if has("autocmd")
@@ -92,3 +93,5 @@ if &t_Co > 2 || has("gui_running")
   " Enable syntax highlighting
   syntax on
 endif
+
+autocmd Filetype objective-c setlocal ts=4 sts=4 sw=4
