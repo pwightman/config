@@ -14,6 +14,7 @@ set scrolloff=3
 set title
 set autoindent
 set autoread
+set relativenumber
 set showmatch
 set hidden
 let mapleader = ","
@@ -30,7 +31,7 @@ let g:xml_namespace_transparent=1
 syntax on
 set ruler
 set showcmd
-set number
+"set number
 vnoremap x "_x
 vnoremap X "_X
 filetype plugin on

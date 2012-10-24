@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/cocoa.vim"]
 	path = .vim/bundle/cocoa.vim
 	url = git://github.com/msanders/cocoa.vim.git
+[submodule ".vim/bundle/colorschemes"]
+	path = .vim/bundle/colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git
